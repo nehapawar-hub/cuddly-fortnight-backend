@@ -9,6 +9,7 @@ D:\React\reactapp\reactfrontend\backend\userapi\bin\Debug\net9.0\UserAPI.pdb
 D:\React\reactapp\reactfrontend\backend\userapi\bin\Debug\net9.0\Azure.Core.dll
 D:\React\reactapp\reactfrontend\backend\userapi\bin\Debug\net9.0\Azure.Identity.dll
 D:\React\reactapp\reactfrontend\backend\userapi\bin\Debug\net9.0\Humanizer.dll
+D:\React\reactapp\reactfrontend\backend\userapi\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\React\reactapp\reactfrontend\backend\userapi\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 D:\React\reactapp\reactfrontend\backend\userapi\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\React\reactapp\reactfrontend\backend\userapi\bin\Debug\net9.0\Microsoft.Build.Locator.dll
