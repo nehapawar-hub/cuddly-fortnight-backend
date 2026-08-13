@@ -7,31 +7,21 @@ namespace UserAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class UsersController : ControllerBase
+public class UserController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
 
-    public UsersController(ApplicationDbContext context)
+    public UserController(ApplicationDbContext context)
     {
         _context = context;
     }
 
-    [HttpPost("registeruser")]
+    [HttpPost("register")]
     public async Task<IActionResult> Register(User user)
     {
-        if (await _context.Users.AnyAsync(x => x.email == user.email))
-        {
-            return BadRequest("Email already registered.");
-        }
-
-        user.password = user.password;
-
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
 
-        return Ok(new
-        {
-            message = "Registration successful"
-        });
+        return Ok(user);
     }
 }
