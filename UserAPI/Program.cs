@@ -54,7 +54,7 @@ builder.Services.AddCors(options => options.AddPolicy("ReactPolicy", policy =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.MapOpenApi();
     app.UseSwagger();
